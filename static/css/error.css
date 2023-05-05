@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@200;300;400;500;700&family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Oswald";
+}
+
+.container1 {
+  max-width: 90%;
+  width: 1100px;
+  height: 90px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container1 .logo {
+  font-size: 32px;
+  color: orangered;
+  font-weight: bold;
+}
+.container1 .logo:hover {
+  color: red;
+  transition: 1.5s ease;
+}
+.nav {
+  width: 350px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.nav li a {
+  font-size: 22px;
+  font-weight: bold;
+  color: orangered;
+}
+.nav li a:hover {
+  color: red;
+  transition: 1.5s ease;
+}
+.nav li:hover {
+  transform: scale(1.2);
+}
+.nav li:active {
+  transform: scale(1);
+}
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../imagenes/FOTOS/p1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  *overflow: hidden;
+}
+
+.mensaje {
+  max-width: 650px;
+  width: 100%;
+  height: 400px;
+  margin: 70px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.664);
+  border-radius: 25px;
+  box-shadow: 9px 9px 9px 0;
+}
+.error {
+  font-size: 36px;
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.title {
+  margin-top: -20px;
+  color: #ffffff;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  *margin-top: 100px;
+}
+.or {
+  margin-top: -10px;
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: bold;
+}
+.Salir {
+  margin-top: 10px;
+  text-decoration: none;
+  padding: 6px 16px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  border: 3px solid red;
+  background: transparent;
+  border-radius: 15px;
+  box-shadow: 4px 4px 4px 0 red;
+}
+.Salir:hover {
+  border: 3px solid rgb(226, 39, 117);
+  box-shadow: 4px 4px 4px 0 rgb(226, 39, 117);
+}
+
+/* RESPONSIVE=================================================================>*/
+
+@media screen and (max-width: 768px) {
+  .container1 {
+    margin-top: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .mensaje {
+    max-width: 90%;
+    width: 100%;
+  }
+}

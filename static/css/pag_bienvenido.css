@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@200;300;400;500;700&family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Oswald";
+}
+a {
+  color: orangered;
+  font-weight: bold;
+}
+html {
+  color: white;
+}
+body {
+  height: 100vh;
+  *background-color: #151515;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../imagenes/FOTOS/pb.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*NAVEGACIÓN  -------------------------------------------------------------*/
+
+.container1 {
+  *border: 1px solid #fff;
+  max-width: 90%;
+  width: 1100px;
+  height: 90px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.container1 .logo {
+  font-size: 32px;
+  font-weight: bold;
+}
+.container1 .logo:hover {
+  color: red;
+  transition: 1.5s ease;
+}
+.nav {
+  max-width: 350px;
+  width: 100%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+}
+.nav li a {
+  font-size: 20px;
+  padding: 0 10px;
+}
+.nav li a:hover {
+  color: red;
+  transition: 1.5s ease;
+}
+.nav li:hover {
+  transform: scale(1.2);
+}
+.nav li:active {
+  transform: scale(1);
+}
+
+/*TEXTOS BIENVENIDO -------------------------------------------------------------*/
+
+.container2 {
+  *border: 1px solid #fff;
+  max-width: 800px;
+  height: 400px;
+  width: 100%;
+  margin: auto;
+  padding: 80px 0;
+  *display: flex;
+  *align-items: center;
+  *justify-content: center;
+}
+.container-text {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.container-text .titu1 {
+  font-size: 50px;
+  padding: 10px 0;
+}
+.container-text .titu2 {
+  font-size: 30px;
+  padding: 8px 0;
+}
+.container-text .titu3 {
+  font-size: 25px;
+  padding: 4px 0;
+}
+
+/*REDES DE PAGINA BIENVENIDO  -------------------------------------------------------------*/
+
+.container2 .redes {
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+.container2 .redes i {
+  margin-left: 10px;
+  font-size: 26px;
+}
+.container2 .redes i:hover {
+  color: red;
+}
+.salir {
+  width: 120px;
+  margin-top: 15px;
+  font-size: 26px;
+  margin: 0 auto;
+  background: transparent;
+  border: 3px solid orangered;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  *text-align: center;
+}
+.salir:hover {
+  background: transparent;
+  border: 3px solid #fff;
+  color: #fff;
+}
+
+/*RESPONSIVE -------------------------------------------------------------*/
+
+@media screen and (max-width: 1200px) {
+  .container1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 700px) {
+  .container2 .container-text .titu1 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 468px) {
+  .container2 .container-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container2 .container-text .titu3 {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 420px) {
+  .nav {
+    margin-top: 30px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 386px) {
+  .nav li a {
+    padding: 0 10px;
+  }
+}
+@media screen and (max-width: 372px) {
+  .container2 .container-text .titu1 {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 347px) {
+  .redes {
+    margin-top: 70px;
+  }
+}
